@@ -1,97 +1,65 @@
-html {
-  background: gainsboro;
-}
 html, body {
   height: 100%;
   max-width: 100%;
   margin: 0;
 }
-section {
-  width: 100%;
-  height: auto;
-}
-@font-face {
-  font-family: "PantonNarrowBlack";
-  src: url(../fonts/PantonNarrowDemo-Black.otf) format("opentype");
-}
-@font-face {
-  font-family: "PantonNarrowLight";
-  src: url(../fonts/PantonNarrowDemo-Light.otf) format("opentype");
-}
-/* PAGE D'ACCUEIL BEGIN*/
+/* HEADER BEGIN*/
 #header {
-  min-height: 100%;
-  max-width: 100%;
-  margin-bottom: -20px;
   display: flex;
-  /* PARALAX */
-  background-image: url('../img/accueil.jpg');
-  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  height: 400px;
+  max-width: 100%;
+  background-color: #3C3C3C;
+  margin-bottom: -20px;
+}
+.logo {
+  background-image: url("../img/StartupWE.png");
+  background-size: contain; /* Important*/
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: 10px;
+  filter: brightness(350%);
 }
-#header-block {
-  font-family: "PantonNarrowLight";
-  position: fixed;
-  width: auto;
-  max-width: 250px;
-  height: auto;
-  background: rgb(59,59,59);
-  background: linear-gradient(to top, #b5bdc8 0%,#828c95 36%,#28343b 100%);
-  color: white;
-  font-size: 80%;
-  bottom: 60px;
-  right: 75px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 10px;
-}
-/* PAGE D'ACCUEIL END*/
-/* BARRE DE NAVIGATION BEGIN*/
-div#container-nav {
-  background: transparent;
-  position: sticky;
-  top: 0;
-}
-div#nav {
-  background: transparent;
+/* HEADER END*/
+/* BARRE DE NAVIGATION BEGIN */
+#nav {
   height: auto;
   width: 100%;
   margin-bottom: -20px;
-  position: sticky;
-  top: 0;
+  position: relative;
 }
-ul {
+.navigation {
   font-family: "PantonNarrowBlack";
   list-style-type: none;
   overflow: hidden;
   display: inline;
   display: flex;
   height: 45px;
-  background-color: gray;
   color: white;
-  font-size: 115%;
-  border-left: 30px solid #484848;
-  margin-left: -10px;
+  border-left: 30px solid #606060;
 }
-li {
-  width: 150px;
+.element {
+  font-size: 150%;
+  font-weight: bold;
+  width: 25%;
+  background-color: #29AAE3;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 9px;
-  padding-bottom: 15px;
+  padding-top: 3px;
   border-right: 2px solid white;
+  font-family: 'Poppins';
 }
 li a {
   text-decoration: none;
   color: inherit;
 }
 li:hover  {
-  background: #606060;
+  background-color: #2081ab;
   cursor: pointer;
 }
-li:first-child {
+#nav li:first-child {
   margin-left: -40px;
   border-left: 2px solid white;
 }
@@ -99,93 +67,213 @@ li:first-child {
   height: 100%;
   width: 100%;
 }
-#checkbox-label {
-  margin-left: auto;
+/* BARRE DE NAVIGATION END */
+/* PRESENTATION-RAPIDE BEGIN*/
+#presentation-rapide {
+  min-height: 600px;
+  height: auto;
+  width: 100%;
+  background-color: #1A4766;
+  display: flex;
+  color: white;
+  text-align: center;
+  font-family: 'Lato';
+  justify-content: space-between;
 }
-/* DROPDOWN MENU BEGIN*/
-#checkbox {
-  display: none;
+.singleUnderline {
+  text-decoration: underline;
 }
-input:checked ~ #dropdown-content {
-  display: block;
-  z-index: 1;
+#paragraphe1, #paragraphe2, #paragraphe3 {
+  max-width: 30%;
+  margin: auto;
 }
-#nav-contact {
-  margin-left: auto;
-  overflow: hidden;
-  width: 50px;
+#paragraphe1, #paragraphe3 {
+  font-size: 85%;
 }
-#dropdown-button {
-  margin-top: -8px;
-  margin-left: 2px;
-  min-height: 45px;
-  width: auto;
-  border: none;
-  outline: none;
-  background-image: url('../img/menu-icon.png');
-  background-size: contain;
-  background-repeat: no-repeat;
+#paragraphe1 {
+  margin-left: 8px;
 }
-#dropdown-content {
-  z-index: 1;
-  min-width: 160px;
-  position: absolute;
-  display: none;
-  top: 45px;
-  right: 10px;
-  border: 1px solid black;
-  border-top: none;
-  box-shadow: 5px 5px 10px 2px #404040;
+#paragraphe3 {
+  margin-right: 5px;
 }
-#dropdown-content a {
-  font-size: 100%;
-  display: block;
-  text-decoration: none;
-  background-color: #f0f0f0;
-  color: #303030;
+#paragraphe2 img {
+  margin: auto;
+  margin-left: -52px;
+}
+#button {
+  margin-top: 25px;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: #606060;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+#button:hover {
+  background-color: #707070;
+}
+#button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+/* PRESENTATION-RAPIDE END*/
+/* PARTICIPANTS BEGIN*/
+#participants {
+  height: auto;
+  width: 100%;
+  background-color: #14354f;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Lato';
+  color: white;
+}
+#coach, #jury {
+  width: 30%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#coach img, #jury img {
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+}
+#coach h2, #jury h2 {
+  font-size: 50px;
+  text-decoration: underline;
+  text-align: center;
+}
+.identite {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  border-bottom: 3px solid gray;
+  max-height: 180px;
+  transition: all .2s ease-in-out;
+}
+.identite:hover {
+  transform: scale(1.2);
+}
+.description {
+  margin: auto;
+  text-align: center;
   padding: 10px;
-  border-bottom: 1px solid black;
+  border: 3px solid gray;
 }
-#dropdown-content:last-child {
-  border-bottom: none;
+.descriptionJury {
+  margin: auto;
+  text-align: center;
+  padding: -3px;
+  border: 3px solid gray;
 }
-#dropdown-button:hover {
-  cursor: pointer;
+.grayscale {
+  color: lightgray;
+  text-decoration: underline;
 }
-#dropdown-content a:hover {
-  background-color: #D3D3D3;
-}
-/* DROPDOWN MENU END */
-#nav-contact:hover {
-  background: #505050;
-  cursor: pointer;
-}
-/* BARRE DE NAVIGATION END*/
-/* PARCOURS BEGIN*/
-#parcours {
-  height: 1000px;
+/* PARTICIPANTS END*/
+/* PROGRAMME BEGIN*/
+#flex-titre {
+  font-family: "Poppins";
+  text-decoration: underline overline;
   width: 100%;
-  background: #f8f8f8;
+  height: auto;
+  position: relative;
+  text-align: center;
+  padding-top: 45px;
+  margin-bottom: -100px;
+  font-size: 400%;
+  color: white;
+  cursor: default;
 }
-/* PARCOURS END*/
-/* COMPTETENCES BEGIN*/
-#competences {
-  height: 1000px;
+#programme {
+  height: 750px;
   width: 100%;
-  background: #f0f0f0;
+  background-color: #1A4766;
+  display: flex;
+  flex-wrap: wrap;
 }
-/* COMPTETENCES END*/
-/* PROJET BEGIN*/
-#projet {
-  height: 1000px;
-  width: 100%;
-  background: #f8f8f8;
+table {
+  font-family: 'Lato';
+  border-collapse: collapse;
+  margin: auto;
+  background-color: lightgray;
+  border-radius: 25px;
 }
-/* PROJET END*/
-/* CONTACT BEGIN*/
-#contact {
-  height: 1000px;
-  width: 100%;
-  background: #f0f0f0;
+#vendredi, #samedi, #dimanche {
+  max-width: 30%;
+  height: 500px;
 }
-/* CONTACT END*/
+#titre-vendredi, #titre-samedi, #titre-dimanche {
+  height: 50px;
+  font-size: 135%;
+}
+tr, th, td {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+td {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+td:hover {
+  background-color: #E0E0E0;
+  cursor: default;
+}
+.bottom-planning:hover {
+  border-radius: 0 0 25px 25px;
+}
+th {
+  background-color: #29AAE3;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid gray;
+}
+/* PROGRAMME END*/
+/* FOOTER BEGIN*/
+footer {
+  display: flex;
+  background-color: #3C3C3C;
+  margin: 0;
+}
+#footcontainer {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+}
+#footcontainer span {
+  font-size: 120%;
+  text-decoration: underline;
+}
+#footcontainer > div {
+  min-width: 25%;
+  max-width: 33%;
+}
+#imageSponsors {
+  margin-top: 35px;
+  margin-left: -35px;
+}
+.reseau a {
+  text-decoration: none;
+  color: white;
+}
+footer p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 80%;
+}
+iframe {
+  height:200px;
+  width:300px;
+}
+/* FOOTER END */
