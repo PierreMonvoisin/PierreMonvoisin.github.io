@@ -13,7 +13,6 @@
     display: block;
   }
 }
-
 /* Design Caroussel */
 #contenu_carou_auto{
   margin:2rem auto;
@@ -40,7 +39,6 @@
   outline:1px solid transparent;
   backface-visibility:hidden; /* Face arrière de l'élément invisible */
 }
-
 /* Images */
 #caroussel-image img:nth-child(1){
   transform:translate3d(0,0,495px)
@@ -74,7 +72,6 @@
   transform: rotateY(-45deg) translateZ(495px);
   width: 300px;
 }
-
 /* Animation */
 @keyframes rotation {
   /* paramètres de l'animation de la rotation */
