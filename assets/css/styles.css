@@ -1,0 +1,170 @@
+html, body {
+  min-width: 415px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+/* HEADER BEGIN */
+#logo {
+  width: 400px;
+  height: 200px;
+}
+.logo-facebook {
+  height: 75px;
+  width: 75px;
+}
+@media only screen and (max-width: 680px) {
+  .logo-hidden {
+    display: none;
+  }
+  .logo-facebook
+  {
+    margin-bottom: 8px;
+  }
+  hr {
+    display: none;
+  }
+  header {
+    margin-bottom: 15px;
+  }
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+/* HEADER END */
+/* DEBUT STYLE FOOTER */
+footer
+{
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	padding-top: 10px;
+  margin: 0;
+}
+
+.fondfooter{
+  background-color: #B5C9CE !important;
+}
+
+.txt_small
+{
+	word-break: normal;
+	margin: auto;
+	width: 90%;
+	border-radius: 15px;
+	margin-top: 10px;
+}
+
+.blockEnLigne
+{
+	display: inline-block;
+}
+/* Afficher masquer block cookie */
+#container
+{
+  margin: 0;
+  padding: 0px;
+}
+#cookie
+{
+	display:none;
+	background: #B5C9CE;
+	padding:1%;
+}
+#afficher:target #cookie
+{
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%);
+	width:98%;
+}
+.masquer
+{
+	display:none;
+}
+#afficher:target .masquer
+{
+	display:inline;
+}
+#afficher:target .afficher
+{
+	display:none;
+}
+/* Afficher masquer block politique confidentialite*/
+#polConfidence
+{
+	display:none;
+	background: #B5C9CE;
+	padding:1%;
+}
+#afficher2:target #polConfidence
+{
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%);
+	width:98%;
+}
+.masquer2
+{
+	display:none;
+}
+#afficher2:target .masquer2
+{
+	display:inline;
+}
+#afficher2:target .afficher2
+{
+	display:none;
+}
+/* Politique infos personnelles*/
+#polInfoPerso
+{
+	display:none;
+	background: #B5C9CE;
+	padding:1%;
+}
+#afficher3:target #polInfoPerso
+{
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%);
+	width:98%;
+}
+.masquer3
+{
+	display:none;
+}
+#afficher3:target .masquer3
+{
+	display:inline;
+}
+#afficher3:target .afficher3
+{
+	display:none;
+}
+/* FIN STYLE FOOTER */
+/* JUMBOTRON ENDING */
+.jumbotron
+{
+  background-color: rgba(137,147,138,1);
+}
+/* JUMBOTRON BEGIN */
+/* NAVBAR BEGIN */
+#navbarchorale {
+  color: white;
+  font-weight: bold;
+  }
+.bg-grey
+{
+  background-color: grey;
+}
+#logo1
+{
+width: 25px;
+}
+/* NAVBAR ENDING */

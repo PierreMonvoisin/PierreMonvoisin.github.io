@@ -1,0 +1,19 @@
+/* MAIN BEGIN */
+article {
+  background-color: #B5C9CE !important;
+}
+.photo-article {
+  max-width: 100%;
+}
+#photo-mobile {
+  display: none;
+}
+@media only screen and (max-width: 680px) {
+  #photo-mobile {
+    display: block;
+  }
+  #photo-screen {
+    display: none;
+  }
+}
+/* MAIN END */
