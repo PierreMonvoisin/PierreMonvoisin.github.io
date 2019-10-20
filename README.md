@@ -1,2 +1,0 @@
-# projetLaChoraleRockBootstrap Responsive
-# projetLaChoraleRock Bootstrap

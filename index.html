@@ -1,205 +1,252 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/home.css">
-  <title>Accueil</title>
-</head>
-<body>
-  <!-- HEADER BEGIN  -->
-  <header class="container-fluid">
-    <div class ="row text-center">
-      <div class="col-sm-2 align-self-center logo-hidden">
-        <a href="https://www.facebook.com/lachoralerock/" target="_blank">
-          <img src="assets/img/facebook-logo.png" alt="logo-facebook" class="logo-facebook">
-        </a>
-      </div>
-      <div class="col">
-        <img src="assets/img/logo.png" alt="logo" id="logo">
-      </div>
-      <div class="col-sm-2 align-self-center">
-        <a href="https://www.facebook.com/lachoralerock/" target="_blank">
-          <img src="assets/img/facebook-logo.png" alt="logo-facebook" class="logo-facebook">
-        </a>
-        <hr> <!-- Barre Design -->
-        <!-- MODAL BEGIN -->
-        <!-- Button trigger modal -->
-        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalScrollable">
-          Infos pratiques
-        </button>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableLabel">Infos pratique</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <h1>Anaïs Frapsauce</h1>
-                <img src="assets/img/la-lune-des-pirates-logo-08-2015.png" alt="Logo lune des pirates"/>
-                <div><b>Téléphone : </b><i>03.22.97.31.51</i></div>
-                <div><b>Adresse mail :</b><i>anais.frapsauce@lalune.net</i></div>
-                <div><b>Tarifs :</b><i>135€ Tarif plein,120€ Tarif réduit (étudiants, demandeurs d’emploi, bénéficiaires des minimas sociaux, personnes handicapées)</i></div>
-                <div><b>Horaires de la chorale :</b><i>19 heure à 21 heure</i></div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.1345741870555!2d2.3040909473132962!3d49.89627675633059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e784376f8fd2ab%3A0xe55f2865b698a41!2sLa%20Lune%20Des%20Pirates!5e0!3m2!1sfr!2sfr!4v1570456622538!5m2!1sfr!2sfr" width="350" height="400"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- MODAL ENDING -->
-      </div>
-    </div>
-    <!-- barre de navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-grey justify-content-center text-monospace">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarchorale" aria-controls="navbarchorale" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse text-light" id="navbarchorale">
-        <ul class="navbar-nav m-auto">
-          <li class="nav-item active">
 
-            <a class="nav-link" href="index.html"><img id="logo1" src="assets/img/home-logo.png" title="home" class="logo-home" alt="">Accueil <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Galerie <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="intervenant.html">Intervenant <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="inscription.html">S'inscrire <span class="sr-only">(current)</span></a>
-          </li>
-        </ul>
+  <title>CV Pierre Monvoisin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+<body class="container-fluid p-0">
+
+  <!-- BARRE DE NAVIGATION BEGIN-->
+  <div class="fixed-top navbar-light" id="NavBar">
+    <nav class="navbar navbar-toggleable-md navbar-dark bg-dark p-1 shadow-lg">
+      <div class="container-fluid d-flex text-center p-0" id="titre-navigation">
+        <button class="navbar-toggler px-1 border-0" id="buttonNav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="https://image.flaticon.com/icons/svg/148/148790.svg" alt="menu">
+        </button>
+        <label for="buttonNav" class="m-auto text-white col-sd">Accueil</label>
+        <label for="buttonNav" class="m-auto text-white col-sd">Compétences</label>
+        <label for="buttonNav" class="m-auto text-white col-sd">Projets</label>
+        <label for="buttonNav" class="m-auto text-white col-sd">Contact</label>
+      </div>
+      <div class="collapse navbar-collapse m-0" id="navbarSupportedContent">
+        <div class="container-fluid d-inline-flex m-0 text-center shadow-lg" id="lists-hidden">
+          <!-- Acceuil Begin -->
+          <div class="navbar-nav m-auto col-sd-3 p-0 screen-display">
+            <p class="nav-item m-0">
+              <a class="nav-link" href="#">Home</a>
+            </p>
+            <p class="nav-item m-0">
+              <a class="nav-link" href="#">Link</a>
+            </p>
+            <p class="nav-item m-0">
+              <a class="nav-link disabled">Disabled</a>
+            </p>
+          </div>
+          <!-- Accueil End -->
+          <!-- Compétences Begin -->
+          <div class="navbar-nav m-auto col-sd-3 p-0 screen-display">
+            <p class="nav-item m-0">
+              <a class="nav-link" href="#competences">Front End</a>
+            </p>
+            <p class="nav-link m-0">
+              <a class="nav-link" href="#competences">Back End</a>
+            </p>
+            <p class="nav-item m-0">
+              <a class="nav-link" href="#competences">Extra</a>
+            </p>
+          </div>
+          <!-- Compétences End -->
+          <!-- Projets Begin -->
+          <div class="navbar-nav m-auto col-sd-3 screen-display" id="projet-list">
+            <p class="nav-item m-0">
+              <a class="nav-link" href="#projet">Catalogue</a>
+            </p>
+          </div>
+          <!-- Projets End -->
+          <!-- Contact Begin -->
+          <div class="navbar-nav ml-auto col-sd-3 p-0 screen-display" id="contact-right">
+            <p class="nav-item m-0">
+              <a class="nav-link" href="#contact">Mail</a>
+            </p>
+            <p class="nav-item m-0">
+              <a class="nav-link" href="#contact">Perso</a>
+            </p>
+            <p class="nav-item m-0">
+              <a class="nav-link" href="https://github.com/PierreMonvoisin" target="_blank">Github</a>
+            </p>
+          </div>
+          <!-- Contact End -->
+          <!-- MOBILE SCREEN DISPLAY BEGIN -->
+          <div class="navbar-nav mx-auto text-center mobile-display">
+            <p class="nav-item m-0">
+              <a class="nav-link" href="#header">Accueil</a>
+            </p>
+            <p class="nav-item m-0">
+              <a class="nav-link" href="#competences">Compétences</a>
+            </p>
+            <p class="nav-item m-0">
+              <a class="nav-link" href="#projet">Projets</a>
+            </p>
+            <p class="nav-item m-0">
+              <a class="nav-link" href="#contact">Contact</a>
+            </p>
+          </div>
+          <!-- MOBILE SCREEN DISPLAY END -->
+        </div>
       </div>
     </nav>
-  </header>
-  <!-- HEADER END -->
-  <!-- MAIN BEGIN -->
-  <div class="container-fluid">
-    <div class="jumbotron text-center ">
-      <div class="row d-flex align-items-center">
-        <div class="col-lg-9">
-          <h1 id="presentation" class="pb-3">La Chorale Rock</h1>
-          <div class="lead" id="photo-screen">
-            <img src="assets/img/presentation.jpg" alt="group-photo" class="photo-article pb-4">
-          </div>
-          <p class="lead" id="top-text">
-            Depuis 4 années consécutives, la Chorale Rock de La Lune des Pirates a pour objectif de démocratiser l'accès aux musiques actuelles par la pratique collective du chant.<br>
-            Elle réunit une vingtaine de personnes pour chanter les titres de Her, Niagara, Fishbach ou encore Blondie ...
-          </p>
-          <div class="lead" id="photo-mobile">
-            <img src="assets/img/presentation.jpg" alt="group-photo" class="photo-article pb-4">
-          </div>
-          <p>
-            Pour y entrer, pas besoin d’avoir fait 5 ans de solfège ... Sur un répertoire résolument rock, grands débutants et amateurs de musique sont invités à monter sur la scène de La Lune des Pirates !<br>
-            Pour cette année, la Chorale Rock dit « au revoir » à ses deux intervenants Gaëlle Fontaine et Hervé Mabille, qui s’en vont tous deux vers de nouvelles aventures.
-            Nous souhaitons la bienvenue à notre nouvel intervenant Philippe Messio, professeur de musique au Diapason, ainsi qu’à nos futurs nouveaux choristes.
-          </p>
-        </div>
-        <div class="col-lg-3" id="aside">
-          <div class="toast fade show m-auto" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-              <strong class="mr-auto text-center">Evenements</strong>
-            </div>
-            <div class="toast-body">
-              <article>
-                <div class="repetions text-left">
-                  <h2 class="text-center">Repetitions :</h2>
-                  <ul>
-                    <li>07/10/2019</li>
-                    <li>14/10/2019</li>
-                    <li>04/11/2019</li>
-                    <li>25/11/2019</li>
-                    <li>02/12/2019</li>
-                    <li>16/12/2019</li>
-                  </ul>
-                </div>
-                <div class="concert text-center">
-                  <h2>Concerts :</h2>
-                  <span>A Venir</span>
-                </div>
-              </article>
-            </div>
+  </div>
+  <!-- BARRE DE NAVIGATION END-->
+
+  <!-- ACCUEIL BEGIN-->
+  <div id="header" class="m-0 p-0">
+  </div>
+  <!-- ACCUEIL END-->
+
+  <!-- COMPETENCES BEGIN -->
+  <div id="competences" class="container-fluid flex-wrap d-flex">
+    <h1 class="w-100 text-center align-self-center">Compétences</h1>
+    <div class="card-deck align-self-center w-100">
+
+      <div class="card shadow">
+        <div class="card-body text-center text-break p-2">
+          <div class="card-title"><img src="https://image.flaticon.com/icons/svg/2166/2166874.svg" alt="front-end-icon">Front End</div>
+          <hr/>
+          <div class="list-group">
+            <a class="list-group-item list-group-item-warning">HTML 5 / CSS 3</a>
+            <a class="list-group-item list-group-item-warning">Responsive Web Design</a>
+            <a class="list-group-item list-group-item-warning">Bootstrap 4</a>
           </div>
         </div>
       </div>
+
+      <div class="card shadow">
+        <div class="card-body text-center p-2">
+          <div class="card-title"><img src="https://image.flaticon.com/icons/svg/2166/2166823.svg" alt="back-end-icon">Back End</div>
+          <hr/>
+          <a class="list-group-item list-group-item-success">Lignes de commandes Linux</a>
+        </div>
+      </div>
+
+      <div class="card shadow">
+        <div class="card-body text-center p-2">
+          <div class="card-title"><img src="https://image.flaticon.com/icons/svg/942/942752.svg" alt="extra-icon">Extra</div>
+          <hr/>
+          <a class="list-group-item list-group-item-info">Anglais C1</a>
+          <a class="list-group-item list-group-item-info">Méthode Agile</a>
+          <a class="list-group-item list-group-item-info">Scrum Master</a>
+        </div>
+      </div>
+
     </div>
   </div>
-  <!-- MAIN ENDING -->
-  <footer>
-    <div id="container">
-      <div id="afficher" class="blockEnLigne">
-        <div id="masquer" class="blockEnLigne">
-          <a class="afficher btn btn-secondary" href="#afficher">Informations cookies</a>
-          <a class="masquer btn btn-secondary" href="#masquer">Informations cookies</a>
-          <!-- block cookie -->
-          <div class="jumbotron fondfooter" id="cookie">
-            <h1 class="txt_small">Informations cookies</h1>
-            <p class="txt_small">
-              Nous utilisons les cookies afin de fournir les services et fonctionnalités proposés surnotre site et afin d’améliorer l’expérience de nos utilisateurs.Les cookies sont des données qui sont téléchargés ou stockés sur votre ordinateur ou surtout autre appareil.
-              <br>
-              En cliquant sur ”J’accepte”, vous acceptez l’utilisation des cookies. Vous pourreztoujours les désactiver ultérieurement.Si vous supprimez ou désactivez nos cookies, vous pourriez rencontrer des interruptionsou des problèmes d’accès au site.
-            </p>
+  <!-- COMPETENCES END -->
 
-            <form>
-              <button type="button" name="accepter" value="accepter">J'accepte</button>
-              <button type="button" name="refuser" value="refuser">Je refuse</button>
-            </form>
-          </div>
+  <!-- PARALLAX BEGIN -->
+  <div id="parallax"></div>
+  <!-- PARALLAX END -->
+
+  <!-- PROJET BEGIN -->
+  <div id="projet" class="container-fluid p-1">
+    <h1 class="row">
+      <span class="w-100 m-0 text-center align-self-center text-white">Projets</span>
+    </h1>
+    <div class="card-columns row-fluid px-2 text-center w-100">
+
+      <div class="card shadow col">
+        <div class="card-header">
+          Site vitrine StartUp Week-End à Amiens.
+        </div>
+        <a href="https://la-manu-amiens-promo-3.github.io/PierreM-SiteVitrine-StartUp/" target="_blank" class="stretched-link"></a>
+        <img class="card-img-bottom" src="./assets/img/startupWEsite.png" alt="Startup-Weekend-Website">
+        <div class="card-footer">
+          <span class="bagde badge-pill badge-dark badge-HTML">HTML5</span>
+          <span class="bagde badge-pill badge-dark badge-CSS">CSS3</span>
         </div>
       </div>
-      <div id="afficher2" class="blockEnLigne">
-        <div id="masquer2" class="blockEnLigne">
-          <a href="#afficher2" class="afficher2 btn btn-secondary">Politique de confidentialité</a>
-          <a href="#masquer2" class="masquer2 btn btn-secondary">Politique de confidentialité</a>
-          <!-- block info confidentialité -->
-          <div class="jumbotron fondfooter" id="polConfidence">
-            <h1 class="txt_small">Politique de confidentialité</h1>
-            <p class="txt_small">Les informations recueillies sur ce formulaire sont enregistrées dans un fichier informatisépar La Chorale Rock pour informations.La base légale du traitement est [base légale du traitement].Les données collectées seront communiquées aux seuls destinataires suivants :La Chorale Rock associations régionnales.Les données sont conservées pendant 12 mois.Vous pouvez accéder aux données vous concernant, les rectifier, demander leur effacementou exercer votre droit à la limitation du traitement de vos données.(Vous pouvez retirer à tout moment votre consentement au traitement de vos données ; Vous pouvez également vous opposerau traitement de vos données ; Vous pouvez également exercer votre droit à la portabilitéde vos données)Consultez le site cnil.fr pour plus d’informations sur vos droits.Pour exercer ces droits ou pour toute question sur le traitement de vos données dans cedispositif, vous pouvez contacter (le cas échéant, notre délégué à la protection des données oule service chargé de l’exercice de ces droits) : LaChoraleRock@LaChoraleRock.org Si vous estimez, après nous avoir contactés, que vos droits « Informatique et Libertés »ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL.</p>
-          </div>
+
+      <div class="card shadow col">
+        <div class="card-header">
+          Transformation cross-plateform d'un site anciennement fixe
+        </div>
+        <a href="https://la-manu-amiens-promo-3.github.io/projetLaChoraleRockBootstrap/" target="_blank" class="stretched-link"></a>
+        <img class="card-img-bottom" src="./assets/img/choraleRockBootstrapsite.png" alt="LaChoraleRock-Bootstrap">
+        <div class="card-footer text-break">
+          <span class="bagde badge-pill badge-dark badge-HTML">HTML5</span>
+          <span class="bagde badge-pill badge-dark badge-bootstrap">Bootstrap4</span>
+          <span class="bagde badge-pill badge-dark badge-CSS">CSS3</span>
         </div>
       </div>
-      <div id="afficher3" class="blockEnLigne">
-        <div id="masquer3" class="blockEnLigne">
-          <a href="#afficher3" class="afficher3 btn btn-secondary">Informations personnelles</a>
-          <a href="#masquer3" class="masquer3 btn btn-secondary">Informations personnelles</a>
-          <!-- bloc infos personnelles -->
-          <div class="jumbotron fondfooter" id="polInfoPerso">
-            <h1 class="txt_small">Informations personnelles</h1>
-            <p class="txt_small">
-              Les données personnelles recueillies sur chaque formulaire sont traitées selon des protocoles sécurisés. La Chorale Rock informe sur chaque formulaire du traitement des données à caractère personnel et de sa finalité.Les traitements automatisés mis en œuvre par la Chorale Rock répondent à des finalités explicites, légitimes et déterminées.Ces finalités sont principalement les suivantes :
+
+      <div class="card shadow col">
+        <div class="card-header">
+          Projets en cours
+        </div>
+        <a href="https://github.com/PierreMonvoisin" target="_blank" class="stretched-link"></a>
+        <div class="card-footer">
+        </div>
+      </div>
+
+      <!-- EN ATTENTE -->
+      <!-- <div class="card shadow col">
+        <div class="card-header">
+
+        </div>
+        <a href="" target="_blank" class="stretched-link"></a>
+        <img class="card-img-bottom" src="./assets/img/" alt="">
+        <div class="card-footer">
+          <span class="badge badge-pill badge-dark"></span>
+        </div>
+      </div> -->
+      <!-- EN ATTENTE -->
+    </div>
+  </div>
+  <!-- PROJET END -->
+
+  <div id="contact">
+  </div>
+
+  <footer>
+    <div class="btn-toolbar justify-content-center pt-1">
+      <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalFooter">Mentions Légales</button>
+    </div>
+    <div class="modal fade" id="modalFooter">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal-title">Mentions Légales</span>
+            <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+          <div class="modal-body text-center">
+            <span>Clause de non-responsabilité</span>
+            <hr>
+            <p>
+              Si vous avez besoin de plus amples renseignements ou si vous avez des questions au sujet de la clause de non-responsabilité de notre site, n'hésitez pas à me contacter par courriel à pierre.monvoisin@gmail.com
             </p>
-            <ul>
-              <li>La gestion des relations avec les sympathisants</li>
-              <li>La gestion de l’information et la communication externe (newsletters et brochures) et dans le cas des pétitions</li>
-              <li>La gestion des relations avec les donateurs ou mécènes, testateurs, potentiels donateurs ou mécènes, potentiels testateurs.</li>
-              <li>La gestion et le suivi du traitement des libéralités</li>
-              <li>La gestion du processus de sélection des soutiens par Clean World</li>
-              <li>La gestion et la mise en œuvre des projets</li>
-              <li>La gestion du processus de création et de suivi des fondations abritées</li>
-            </ul>
+            <hr>
+            <p>
+              Toutes les informations contenues sur ce site Web sont publiées de bonne foi et à titre d'information générale uniquement. *URL* ne donne aucune garantie quant à l'exhaustivité, la fiabilité et l'exactitude de ces informations. Toute action que vous entreprenez sur l'information que vous trouvez sur ce site Web, est strictement à vos propres risques. *Url* ne sera pas responsable des pertes et/ou dommages liés à l'utilisation de mon site web.
+              À partir de mon curriculum vitae, vous pouvez visiter d'autres sites Web en suivant des hyperliens vers des sites externes. Bien que je m'efforce de ne fournir que des liens de qualité vers des sites Web utiles et éthiques, je n'ai aucun contrôle sur le contenu et la nature de ces sites. Ces liens vers d'autres sites n'impliquent pas une recommandation pour l'ensemble du contenu de ces sites. Les propriétaires et le contenu du site peuvent changer sans préavis et peuvent survenir avant que nous ayons la possibilité de supprimer un lien qui a pu mal tourner.
+              Sachez également que lorsque vous quittez mon site Web, d'autres sites peuvent avoir des politiques de confidentialité et des conditions différentes qui sont indépendantes de ma volonté. Veuillez-vous assurer de vérifier les politiques de confidentialité de ces sites ainsi que leurs "Conditions d'utilisation" avant de vous engager dans toute activité commerciale ou de télécharger toute information.
+            </p>
+            <span>Consentement</span>
+            <hr>
+            <p>
+              En utilisant mon site Web, vous consentez par la présente à cette clause de non-responsabilité et en acceptez les conditions.
+            </p>
+            <span>Mises à jour</span>
+            <hr>
+            <p>
+              Si je mets à jour, modifie ou apporte des changements à ce document, ces changements seront affichés bien en vue ici.
+            </p>
           </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark m-auto" data-dismiss="modal">× Fermer</button>
+          </div>
+
         </div>
       </div>
     </div>
+
   </footer>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
